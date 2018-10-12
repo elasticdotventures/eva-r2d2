@@ -31,7 +31,7 @@ export default {
       let chars = this.sendmsg.split('');
       // alert(chars);
       
-      var dtmfs = r2d2.encode(chars);
+      var dtmfs = r2d2.r2d2_encode(chars);
       var out = dtmfs.join('');
       var tx = r2d2.play(out);    // this currently does not support the _ pauses;
 
